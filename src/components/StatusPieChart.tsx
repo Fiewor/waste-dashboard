@@ -7,6 +7,8 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 const options = {
   plugins: {
+    responsive: true,
+    maintainAspectRatio: false,
     legend: {
       position: "right" as const, // <-- move legend to the right
       labels: {

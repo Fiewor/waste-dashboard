@@ -14,10 +14,10 @@ export const Dashboard: React.FC<Props> = ({ data }) => {
     <div className="flex flex-col justify-between gap-2">
       <SummaryCards summary={data.summary} />
       <div className="py-4 w-full flex flex-col items-center md:flex-row gap-4">
-        <div className="w-2/4">
+        <div className="w-full md:w-2/4">
           <StatusPieChart summary={data.summary} />
         </div>
-        <div className="w-2/4">
+        <div className="w-full md:w-2/4">
           <FullnessBarChart bins={data.bins} />
         </div>
       </div>
