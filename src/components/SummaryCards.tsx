@@ -16,7 +16,7 @@ export const SummaryCards: React.FC<{ summary: Summary }> = ({ summary }) => {
       {cards.map((card) => (
         <div
           key={card.title}
-          className="bg-white p-4 rounded shadow text-center"
+          className="bg-gray-500 p-4 rounded shadow text-center"
         >
           <h3 className="text-lg font-semibold">{card.title}</h3>
           <p className="text-2xl font-bold">{card.value}</p>
