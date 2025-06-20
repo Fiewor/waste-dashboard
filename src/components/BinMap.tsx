@@ -19,7 +19,7 @@ const createIcon = (status: string) =>
   });
 
 export const BinMap: React.FC<{ bins: Bin[] }> = ({ bins }) => {
-  const center = [6.5244, 3.3792]; // Lagos as center
+  const center: [number, number] = [6.5244, 3.3792];
 
   return (
     <div className="col-span-full h-[400px] rounded overflow-hidden shadow">
