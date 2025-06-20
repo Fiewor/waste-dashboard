@@ -5,6 +5,18 @@ import type { Summary } from "../types";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
+const options = {
+  plugins: {
+    legend: {
+      position: "right" as const, // <-- move legend to the right
+      labels: {
+        boxWidth: 20,
+        padding: 20,
+      },
+    },
+  },
+};
+
 export const StatusPieChart: React.FC<{ summary: Summary }> = ({ summary }) => {
   const data = {
     labels: ["Normal", "Warning", "Full"],
@@ -16,5 +28,5 @@ export const StatusPieChart: React.FC<{ summary: Summary }> = ({ summary }) => {
       },
     ],
   };
-  return <Pie data={data} />;
+  return <Pie data={data} options={options} />;
 };

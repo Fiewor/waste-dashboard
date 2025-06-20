@@ -21,7 +21,7 @@ export const Dashboard: React.FC<Props> = ({ data }) => {
           <FullnessBarChart bins={data.bins} />
         </div>
       </div>
-      <BinMap bins={data.bins} />
+      <BinMap bins={data.bins} alerts={data.alerts} />
       <AlertsFeed alerts={data.alerts} />
     </div>
   );
