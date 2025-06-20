@@ -18,7 +18,7 @@ export const FullnessBarChart: React.FC<{ bins: Bin[] }> = ({ bins }) => {
     labels: bins.map((bin) => bin.location.name),
     datasets: [
       {
-        label: "% Full",
+        label: "Fullness Percentage",
         data: bins.map((bin) => bin.fullness),
         backgroundColor: bins.map((bin) =>
           bin.status === "normal"

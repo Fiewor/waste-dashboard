@@ -13,8 +13,14 @@ export const Dashboard: React.FC<Props> = ({ data }) => {
   return (
     <div className="flex flex-col justify-between gap-2">
       <SummaryCards summary={data.summary} />
-      <StatusPieChart summary={data.summary} />
-      <FullnessBarChart bins={data.bins} />
+      <div className="py-4 w-full flex flex-col md:flex-row gap-4">
+        <div className="w-2/4">
+          <StatusPieChart summary={data.summary} />
+        </div>
+        <div className="w-2/4">
+          <FullnessBarChart bins={data.bins} />
+        </div>
+      </div>
       <BinMap bins={data.bins} />
       <AlertsFeed alerts={data.alerts} />
     </div>

@@ -5,7 +5,7 @@ export const mockData = {
     {
       id: "bin-001",
       location: { name: "Engineering Block", lat: 6.5244, lng: 3.3792 },
-      fullness: 82,
+      fullness: 42,
       lastUpdated: "2025-06-18T08:30:00Z",
       status: "warning" as BinStatus,
     },
